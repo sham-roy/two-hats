@@ -48,6 +48,7 @@
   max-height: 1080px;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
 
 /* -- HEADER SECTION LEFT -- */
@@ -310,12 +311,15 @@
 }
 
 .footer {
-  margin-top: 106px;
+  margin-top: 110px;
   background: #FF9257;
   display: flex;
   height: 191px;
   /* align-items: center;
   justify-content: center; */
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .footer-container {
@@ -510,6 +514,7 @@
   }
 
   .footer {
+    position: relative;
     height: auto;
   }
 

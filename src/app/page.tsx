@@ -98,6 +98,7 @@ export default function Home() {
         </div>
 
         <div className="image-grid-container">
+          
           <Image className="image" src="/images/right-img1.png" alt="Colorful abstract graphic design example" width={297} height={297} />
           <Image className="image" src="/images/right-img2.png" alt="Example of modern typography in graphic design" width={297} height={297} />
           <Image className="image" src="/images/right-img3.png" alt="3D rendered character used in design" width={297} height={297} />
