@@ -358,16 +358,11 @@
 
 /* -- RIGHT - IMAGES SECTION --  */
 .image-grid-container {
-  background: #F1F6FE, url('/images/Vector.png');
+  background: url('/images/Vector.png');
   background-repeat: no-repeat;
   background-size: cover;
-
   width: clamp(0px, 38.333vw, 736px);
-  /* max-height: 1080px;
-  overflow: hidden; */
-
   padding: 60px clamp(0px, 2.813vw, 54px);
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(0px, 1.771vw, 34px);
