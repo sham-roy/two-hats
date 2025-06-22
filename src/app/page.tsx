@@ -1,95 +1,116 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import { BrandLogo, CircleStar, PlayIcon } from "./component/icons";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+
+
+  return (
+
+    <main className="container">
+
+      <div className="main-grid">
+
+        <div className="content-left">
+
+          <header className="header">
+
+            <div className="logo">
+              <BrandLogo />
+              <p className="logo-text">Hello World!</p>
+            </div>
+
+            <nav className="nav-links">
+              <Link href="/course">Course</Link>
+              <Link href="/info">Info</Link>
+              <Link href="/testimonial">Testimonial</Link>
+              <Link href="/categories">Categories</Link>
+            </nav>
+
+          </header>
+
+
+          <div className="content-main">
+
+            <h1>
+              <span className="line">LEARN GRAPHICS</span>
+              <span className="line">DESIGN FOR LIFE</span>
+              <CircleStar />
+            </h1>
+
+            <p className="content-summery">
+              <span>Stay Informed, Stay Ahead: Unveiling the Future of Technology, Gadgets, and</span>
+              <span>Innovation.</span>
+              <span> Your Gateway to the Digital Universe - Where Innovation Meets Insight.</span>
+            </p>
+
+            <div className="students-info">
+
+              <div className="student-stats">
+                <div className="count">5.1 K</div>
+                <div className="label">
+                  <span>Students All</span>
+                  <span> Over World</span>
+                </div>
+              </div>
+
+              <div className="student-avatars">
+                <img className="avatar" src="/icons/students1.png" />
+                <img className="avatar" src="/icons/students2.png" />
+                <img className="avatar" src="/icons/students3.png" />
+              </div>
+
+            </div>
+
+            <div className="action-buttons">
+              <button className="btn btn-primary">Book Your Seat</button>
+              <button className="btn btn-secondary">
+                <PlayIcon /> See Journey
+              </button>
+            </div>
+
+          </div>
+
+          <footer className="footer">
+
+            <div className="footer-container">
+
+              <div className="stat">
+                <div className="number">6409</div>
+                <div className="label">Success Story</div>
+              </div>
+
+              <div className="stat">
+                <div className="number">124</div>
+                <div className="label">Expert Instructor</div>
+              </div>
+
+              <div className="stat">
+                <div className="number">54.749</div>
+                <div className="label">Hours Tutored</div>
+              </div>
+
+            </div>
+
+          </footer>
+
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="image-grid-container">
+          <Image className="image" src="/images/right-img1.png" alt="Colorful abstract graphic design example" width={297} height={297} />
+          <Image className="image" src="/images/right-img2.png" alt="Example of modern typography in graphic design" width={297} height={297} />
+          <Image className="image" src="/images/right-img3.png" alt="3D rendered character used in design" width={297} height={297} />
+          <Image className="image" src="/images/right-img4.png" alt="A professional logo design portfolio piece" width={297} height={297} />
+          <Image className="image" src="/images/right-img5.png" alt="Vibrant illustration for a web banner" width={297} height={297} />
+          <Image className="image" src="/images/right-img6.png" alt="Abstract geometric pattern design" width={297} height={297} />
+        </div>
+
+      </div>
+
+    </main>
+
+
+
   );
 }
